@@ -1,6 +1,6 @@
 #from __future__ import division
 
-from MultiClassPrediction import MultiClassPrediction
+from melpy.validation.MultiClassPrediction import MultiClassPrediction
 from LinearKernel import LinearKernel
 from RBFKernel import RBFKernel
 import numpy as np

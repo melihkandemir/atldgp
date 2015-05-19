@@ -1,16 +1,15 @@
 #from __future__ import division
 
-from melpy.core.Classifier import Classifier
-from melpy.validation.MultiClassPrediction import MultiClassPrediction
-from melpy.kernels.LinearKernel import LinearKernel
-from melpy.kernels.RBFKernel import RBFKernel
+from MultiClassPrediction import MultiClassPrediction
+from LinearKernel import LinearKernel
+from RBFKernel import RBFKernel
 import numpy as np
 from scipy.stats import norm
 import sklearn.cluster
 from copy import deepcopy
 import scipy
 
-class DSGPSymmetricTransferClassifier(Classifier):
+class DSGPSymmetricTransferClassifier:
     
     learned_model=0
     kernels=0
@@ -36,8 +35,6 @@ class DSGPSymmetricTransferClassifier(Classifier):
                  learnhyper=1, \
                  learn_sub_gps=1, \
                  learning_rate_start=1.):
-                     
-        Classifier.__init__(self,'Deep Sparse GP Symmetric Transfer Classifier')
         
         self.R=len(kernels_source)
        
