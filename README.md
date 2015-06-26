@@ -1,5 +1,5 @@
 # atldgp
-This is the preliminary version of the source code for the model published in
+This package includes the source code for the model published in
 
 M.Kandemir, Asymmetric Transfer Learning with Deep Gaussian Processes, ICML, 2015.
 
