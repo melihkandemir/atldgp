@@ -1,3 +1,10 @@
+#
+# Base prediction class.
+#
+# Contact: melihkandemir@gmail.com
+#
+# All rights reserved.
+#
 class Prediction:
     
     

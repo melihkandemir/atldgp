@@ -1,3 +1,10 @@
+#
+# Radial basis function (RBF) kernel class.
+#
+# Contact: melihkandemir@gmail.com
+#
+# All rights reserved.
+#
 from Kernel import Kernel
 import numpy as np
 import copy

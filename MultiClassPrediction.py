@@ -1,3 +1,10 @@
+#
+# Multiclass prediction class.
+#
+# Contact: melihkandemir@gmail.com
+#
+# All rights reserved.
+#
 from Prediction import Prediction
 
 class MultiClassPrediction(Prediction):

@@ -1,5 +1,12 @@
-#from __future__ import division
-
+#
+# Source code for the ATL-DGP model.
+#
+# Paper: M. Kandemir, Asymmetric Transfer Learning with Deep Gaussian Processes, ICML, 2015
+#
+# Contact: melihkandemir@gmail.com
+#
+# All rights reserved.
+#
 from MultiClassPrediction import MultiClassPrediction
 from LinearKernel import LinearKernel
 from RBFKernel import RBFKernel
@@ -31,7 +38,7 @@ class DSGPAsymmetricTransferClassifier:
     A=0     # mean of q(X), size = N x R
     B=0     # variance of q(X), size = N x R
             
-    def __init__(self,inducing_kernel,kernels_source, kernels_target, common_dims, num_inducing, max_iter, \
+    def __init__(self,inducing_kernel,kernels_source, kernels_target, num_inducing, max_iter, \
                  learnhyper=1, \
                  learn_sub_gps=1, \
                  learning_rate_start=1.):
@@ -43,8 +50,6 @@ class DSGPAsymmetricTransferClassifier:
         self.kernels.append(kernels_target)
         
         self.kernels.append(kernels_source)
-        
-        self.common_dims = common_dims
         
         self.P = num_inducing
                 
